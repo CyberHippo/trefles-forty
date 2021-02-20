@@ -1,0 +1,246 @@
+# Site settings
+baseURL = "http://example.org/"
+languageCode = "fr"
+title = "Les Trèfles"
+theme = "forty"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "Les trèfles - Maison d'hôtes"
+  description = "Les trèfles - Maison d'hôtes"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page introuvable"
+    text = "Please visit [this page](/)"
+
+  # Navigation Section
+  [params.navigation]
+    title = "Les trèfles"
+    subtitle = "Maison d'hôtes"
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Accueil"
+      url = "#"
+
+    [[params.navigation.links]]
+      name = "Chambres d'hôtes"
+      url = "chambres"
+
+    [[params.navigation.links]]
+      name = "Tables d'hôtes"
+      url = "tables"
+
+    [[params.navigation.links]]
+      name = "Contact et Réservation"
+      url = "reservation"
+
+    [[params.navigation.links]]
+      name = "Auvergne - Puy de Dôme"
+      url = "auvergne"
+
+    [[params.navigation.links]]
+      name = "Loisirs"
+      url = "loisirs"
+
+    [[params.navigation.links]]
+      name = "Liens"
+      url = "liens"
+
+    [[params.navigation.links]]
+      name = "Infos COVID"
+      url = "covid"
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    # [[params.navigation.button1]]
+    #   name = "Get Started"
+    #   url = "blogs"
+
+    # Button Style 2
+    # [[params.navigation.button2]]
+    #   name = "Log In"
+    #   url = "#"
+
+
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Bienvenue"
+    subtitle = "Bruno Hémery vous propose de faire halte aux Trèfles Chambres d'hôtes et table d'hôtes proche de Clermont-Ferrand dans le Puy de Dôme (63)."
+    buttonText = "Voir les chambres"
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+
+    [[params.tiles.showcase]]
+      title = "Chambre Bleuets"
+      subtitle = "2 Personnes, 75 € la nuitée"
+      image = "bleuets1.jpg"
+      url = "chambres/bleuets/"
+
+    [[params.tiles.showcase]]
+      title = "Chambre Pensées"
+      subtitle = "2 Personnes, 75 € la nuitée"
+      image = "pensees1.JPG"
+      url = "chambres/pensees/"
+
+    [[params.tiles.showcase]]
+      title = "Roses"
+      subtitle = "Lorem Etiam Nullam"
+      image = "roses1.jpg"
+      url = "chambres/roses/"
+
+    [[params.tiles.showcase]]
+      title = "Chambre Tournesols"
+      subtitle = "2 à 3 Personnes, 85 € / 105 € la nuitée"
+      image = "tournesols1.jpg"
+      url = "chambres/tournesols/"
+
+    [[params.tiles.showcase]]
+      title = "Consequat"
+      subtitle = "Ipsum Dolor Sit Amet"
+      image = "pic05.jpg"
+      url = "chambres/ipsum"
+
+    [[params.tiles.showcase]]
+      title = "Etiam"
+      subtitle = "Feugiat Amet Tempus"
+      image = "pic06.jpg"
+      url = "chambres/ipsum"
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "Massa libero"
+    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
+    Mauris aliquet magna magna sed nunc rhoncus pharetra.
+    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
+    Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
+    Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
+    buttonText = "Get Started"
+    url = "blogs"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    # formEmail = "example@domain.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email"
+    email = "patricia.hemery@maisondhotes-lestrefles.com"
+
+    [[params.contact.phone]]
+    title = "Fixe"
+    phone = " +33 (0)4 73 97 59 44"
+
+    [[params.contact.phone]]
+    title = "Mobile"
+    phone = " +33 (0)6 47 73 82 53"
+
+    [[params.contact.address]]
+    title = "Adresse"
+    street = "place de l'église"
+    city = "63720 SAINT IGNAT"
+    country = "France"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Les Trèfles"
+
+    # Uses font awesome icons
+    # [[params.footer.social]]
+    #   icon = "fa-twitter"
+    #   url= "https://www.twitter.com"
+    #   label = "Twitter"
+
+    # [[params.footer.social]]
+    #   icon = "fa-facebook"
+    #   url= "https://www.facebook.com"
+    #   label = "Facebook"
+
+    # [[params.footer.social]]
+    #   icon = "fa-instagram"
+    #   url= "https://www.instagram.com"
+    #   label = "Instagram"
+
+    # [[params.footer.social]]
+    #   icon = "fa-github"
+    #   url= "https://www.github.com"
+    #   label = "GitHub"
+
+    # [[params.footer.social]]
+    #   icon = "fa-linkedin"
+    #   url= "https://www.linkedin.com"
+    #   label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
