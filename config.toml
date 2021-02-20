@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://trefles.vergnol.eu/"
+baseURL = "https://trefles.vergnol.eu/"
 languageCode = "fr"
 title = "Les Trèfles"
 theme = "forty"
